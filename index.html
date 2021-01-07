@@ -22,11 +22,11 @@
 <div class="div1"><h3>Width of the line - </h3></div><input type="range" oninput="all_move();" class="slider" id="width_of_line" min="1" max="18" value="1"><br><br>
 <div class="div1"><h3>Radius - </h3></div><input oninput="all_move();" type="range" class="slider" id="radius" min="10" max="100" value="10"><br><br>
 <br>
-<button class="save" id="save_png" onclick="saveImagePng();">Download as PNG</button>&numsp;&numsp;
+<div style="align-content: space-between;">
+<button class="save" id="save_png" onclick="saveImagePng();">Download as PNG</button>
 <button class="save" id="save_jpg" onclick="saveImageJpg();">Download as JPG</button>
-<br>
-<br>
-<button id="clear" onclick="clearArea();">Clear</button>
+</div>
+<button style="margin-top: 5px;" id="clear" onclick="clearArea();">Clear</button>
 <a id="a"></a>
 
 <!--Additional activity -->
