@@ -12,8 +12,10 @@
 <div id="div1">
 <h1>Paint</h1>
 </div>
-<canvas id="preview" style="position: absolute; top: 109px; left: 106.45px;" width="800" height="600"></canvas>
-<canvas id="myCanvas" width="800" height="600"></canvas>
+<div height="400px" width="600px">
+<canvas id="preview" style="margin-right:-10px; margin-bottom:-10px; margin-left:10px; margin-top:10px; position: absolute;" width="500px" height="600px"></canvas>
+<canvas id="myCanvas" width="600px" height="400px"></canvas>
+</div>
 <br>
 <br>
 <div class="div1"><h3>Color - </h3></div><input type="color" oninput="colorc();" onclick="all_touchstart();" class="color" id="color" value="#000000"><br><canvas onclick="cclick();" class="colorbox" id="colorbox"></canvas><br><br>
@@ -26,7 +28,6 @@
 <br>
 <button id="clear" onclick="clearArea();">Clear</button>
 <a id="a"></a>
-
 
 <!--Additional activity -->
 
