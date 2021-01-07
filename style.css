@@ -1,0 +1,100 @@
+  .body_backgorund {
+    background-image: url("bg1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  body, html{
+    height: 100%;
+    width: 100%;
+  }
+  h1
+  {
+      font-size: 40px;
+  }
+  #myCanvas
+  {
+      border-width: 10px;
+      background-color: white; 
+      border-style: ridge;
+  }
+
+  .colorbox{
+    width: 396px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: -15px;
+    height: 30px;
+  }
+
+  #colorbox{
+    background-color: black;
+  }
+
+  #clear {
+    background-color: #c31f1f;
+    border: none;
+    color: white;
+    padding: 10px 42px;
+    font-size: 20px;
+    border-radius: 7px;
+    font-weight: bold;
+  }
+
+  .save{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 42px;
+    font-size: 20px;
+    border-radius: 7px;
+    font-weight: bold;
+  }
+
+  .color
+  {
+    margin-top: -15px;
+    visibility: hidden;
+    width: 0px;
+  }
+
+  .slider[type="range"] {
+    -webkit-appearance: none;
+    width: 396px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    overflow: hidden;
+  }
+
+  .slider[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 40px;
+    height: 30px;
+    background-image: linear-gradient(to left, white, black);
+    background-size: 100%;
+    border-radius: 10px;
+    box-shadow: 350px 0px 0px 340px white;
+  }
+
+  #preview{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  #div1{
+    width: fit-content;
+    border-radius: 7px;
+    background-color: rgb(255, 218, 218);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .div1{
+    width: fit-content;
+    border-radius: 7px;
+    background-color: rgb(218, 255, 236);
+    padding-left: 10px;
+    padding-right: 10px;
+  }

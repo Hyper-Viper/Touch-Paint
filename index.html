@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+
+</head>
+<body class="body_backgorund">
+
+<div id="div" align="center" onmousedown="all_touchend();">
+<div id="div1">
+<h1>Paint</h1>
+</div>
+<canvas id="preview" style="position: absolute; top: 111px; left: 101px;" width="800" height="600"></canvas>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+<br>
+<br>
+<div class="div1"><h3>Color - </h3></div><input type="color" oninput="colorc();" onclick="all_touchstart();" class="color" id="color" value="#000000"><br><canvas onclick="cclick();" class="colorbox" id="colorbox"></canvas><br><br>
+<div class="div1"><h3>Width of the line - </h3></div><input type="range" oninput="all_move();" class="slider" id="width_of_line" min="1" max="18" value="1"><br><br>
+<div class="div1"><h3>Radius - </h3></div><input oninput="all_move();" type="range" class="slider" id="radius" min="10" max="100" value="10"><br><br>
+<br>
+<button class="save" id="save_png" onclick="saveImagePng();">Download as PNG</button>&numsp;&numsp;
+<button class="save" id="save_jpg" onclick="saveImageJpg();">Download as JPG</button>
+<br>
+<br>
+<button id="clear" onclick="clearArea();">Clear</button>
+<a id="a"></a>
+
+<!--Additional activity -->
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
