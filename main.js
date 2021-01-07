@@ -5,14 +5,12 @@ var current_position_of_touch_x, current_position_of_touch_y;
     ctx2 = preview.getContext("2d");
     var width = screen.width;
     var height = screen.height;
-    new_width = screen.width;
     new_height = screen.height - 430;
-    var saved_sketch;
 
     if (width < 992) {
-        canvas.width = new_width;
+        canvas.width = width;
         canvas.height = new_height;
-        preview.width = new_width;
+        preview.width = width;
         preview.height = new_height;
         document.body.style.overflow = "hidden";
     }
@@ -89,7 +87,7 @@ var current_position_of_touch_x, current_position_of_touch_y;
         ctx2.strokeStyle = document.getElementById("color").value;
         ctx2.lineWidth = document.getElementById("width_of_line").value;
         ctx2.beginPath();
-        ctx2.arc(new_width/2, new_height/2, document.getElementById("radius").value, 0, 2 * Math.PI);
+        ctx2.arc(width/2, new_height/2, document.getElementById("radius").value, 0, 2 * Math.PI);
         ctx2.stroke();
     }
 
