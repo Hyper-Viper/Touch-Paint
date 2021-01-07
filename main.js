@@ -5,7 +5,7 @@ var current_position_of_touch_x, current_position_of_touch_y;
     ctx2 = preview.getContext("2d");
     var width = screen.width;
     var height = screen.height;
-    new_width = screen.width - 70;
+    new_width = screen.width;
     new_height = screen.height - 430;
     var saved_sketch;
 
@@ -17,7 +17,7 @@ var current_position_of_touch_x, current_position_of_touch_y;
         document.body.style.overflow = "hidden";
     }
 
-    bg_color = "white"
+    bg_color = "white";
     color = "black";
     width_of_line = 1;
     radius = 10;
