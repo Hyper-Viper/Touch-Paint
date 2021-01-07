@@ -8,7 +8,7 @@ var current_position_of_touch_x, current_position_of_touch_y;
     new_width = screen.width - 70;
     new_height = screen.height - 430;
     var saved_sketch;
-    window.reload();
+
     if (width < 992) {
         canvas.width = new_width;
         canvas.height = new_height;
